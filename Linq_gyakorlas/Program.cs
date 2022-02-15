@@ -76,7 +76,11 @@ namespace Linq_gyakorlas
 
             var list2 = new List<int>() {1,5,8,4,7,5,2,1,5,4,54,5,4,8,8,7,4, };
 
-            for
+            list2.OrderByDescending(x => x).ToList().ForEach(y => Console.Write(y));
+                       
+            list2.GroupBy(x => x).ToList().ForEach(z => Console.Write(z));
+
+
 
             Console.ReadLine();
 
